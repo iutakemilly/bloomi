@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fbf7f5; /* Off-white de fundo */
+    color: #333333;
+    padding: 20px 0 50px 0;
+}
+
+/* Card Principal Centralizado */
+.page-wrapper, .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #f2e9f0;
+}
+
+/* Header Banner (Cabeçalho Duplo) */
+.header-banner {
+    display: flex;
+    height: 120px;
+    margin-bottom: 25px;
+}
+
+.logo-box {
+    background-color: #7b328c; /* Roxo principal */
+    width: 32%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-bottom-right-radius: 35px;
+    text-align: center;
+}
+
+.logo-box h2, .logo-box div {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-box p, .logo-box span {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.title-box {
+    background-color: #f7ede8; /* Beige/Off-white suave do topo */
+    width: 68%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 35px;
+}
+
+.title-box h1, .title-box h3 {
+    font-size: 1.3rem;
+    color: #592466;
+    font-weight: bold;
+}
+
+.title-box h2 {
+    font-size: 1.8rem;
+    color: #7b328c;
+    font-weight: bold;
+}
+
+/* Divisores/Banners Roxos das Seções */
+.section-header {
+    background-color: #7b328c;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    margin: 25px 0 20px 0;
+}
+
+/* Formulário e Grids */
+.form-container, .table-section {
+    padding: 0 35px 30px 35px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px 20px;
+}
+
+.col-12 { grid-column: span 12; }
+.col-6 { grid-column: span 6; }
+
+.form-group, form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #7b328c;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 15px;
+    border: 1.5px solid #e0d0e3;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: #444;
+    outline: none;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #7b328c;
+    box-shadow: 0 0 6px rgba(123, 50, 140, 0.25);
+}
+
+/* Botão de Cadastro Roxo Grande */
+.btn-submit, button[type="submit"] {
+    background-color: #7b328c;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover, button[type="submit"]:hover {
+    background-color: #642773;
+}
+
+/* Tabelas e Lista de Registros */
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #f0e2ee;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    background-color: #7b328c;
+    color: #ffffff;
+    padding: 14px 12px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f7ede8;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #faf4f8;
+}
+
+/* Botão de Ação (Inativar) */
+.btn-inativar, .btn-danger {
+    background-color: #ffffff;
+    color: #d93838;
+    border: 1.5px solid #d93838;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.btn-inativar:hover, .btn-danger:hover {
+    background-color: #d93838;
+    color: #ffffff;
+}
+
+/* Status Ativo / Inativo */
+.status-ativo {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-inativo {
+    color: #e74c3c;
+    font-weight: bold;
+}
